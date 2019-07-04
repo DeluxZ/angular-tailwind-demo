@@ -2,13 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { SplashpageComponent } from './splashpage/splashpage.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule
+  ],
+  declarations: [
+    AppComponent,
+    SplashpageComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
