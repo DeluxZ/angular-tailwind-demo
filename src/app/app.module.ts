@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SplashpageComponent } from './splashpage/splashpage.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
-    SplashpageComponent
+    SplashpageComponent,
+    DashboardComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
