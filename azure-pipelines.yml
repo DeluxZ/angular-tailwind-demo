@@ -10,6 +10,16 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: Npm@1
+  inputs:
+    command: 'install'
+
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'npm run prestart'
+
+
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
