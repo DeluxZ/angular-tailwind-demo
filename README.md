@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/twidel/Workcation%20Tailwind%20Angular/_apis/build/status/DeluxZ.angular-tailwind-demo?branchName=master)](https://dev.azure.com/twidel/Workcation%20Tailwind%20Angular/_build/latest?definitionId=36&branchName=master)
+
 # AngularTailwindDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
