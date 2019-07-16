@@ -11,10 +11,18 @@ pool:
 
 steps:
 - task: Npm@1
+  displayName: 'npm install'
   inputs:
     command: 'install'
 
 - task: Npm@1
+  displayName: 'Install ng-tailwindcss globally'
+  inputs:
+    command: 'custom'
+    customCommand: 'install -g ng-tailwindcss'
+
+- task: Npm@1
+  displayName: 'Run ngtw build'
   inputs:
     command: 'custom'
     customCommand: 'run prestart'
