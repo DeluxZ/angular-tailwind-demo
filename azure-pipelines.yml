@@ -17,7 +17,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'npm run prestart'
+    customCommand: 'run prestart'
 
 
 - script: echo Hello, world!
