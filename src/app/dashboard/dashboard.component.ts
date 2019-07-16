@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, OnInit, OnDestroy, Inject, Renderer2 } from '@angular/core';
+import { Globals } from '../globals';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +9,7 @@ import { Component, OnInit, OnDestroy, Inject, Renderer2 } from '@angular/core';
 })
 export class DashboardComponent implements OnInit, OnDestroy {
 
-  constructor(@Inject(DOCUMENT) private document: Document, private renderer: Renderer2) {
+  constructor(@Inject(DOCUMENT) private document: Document, private renderer: Renderer2, private globals: Globals) {
   }
 
   ngOnInit(): void {
