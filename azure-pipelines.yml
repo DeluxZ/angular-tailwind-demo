@@ -19,6 +19,24 @@ steps:
 - script: npm run prestart
   displayName: Run ngtw build
 
+- script: ng build --prod
+  displayName: Build Angular
+
+- task: CopyFiles@2
+  displayName: Copy files to artifact directory
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\dist\'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    CleanTargetFolder: true
+    OverWrite: true
+
+- task: PublishPipelineArtifact@1
+  displayName: Publish artifact
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+    artifact: 'drop'
+
 # - script: echo Hello, world!
 #   displayName: 'Run a one-line script'
 
