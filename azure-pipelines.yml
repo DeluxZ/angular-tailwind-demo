@@ -19,7 +19,7 @@ steps:
   displayName: 'Install ng-tailwindcss globally'
   inputs:
     command: 'custom'
-    customCommand: 'install -g ng-tailwindcss'
+    customCommand: 'sudo npm install -g ng-tailwindcss'
 
 - task: Npm@1
   displayName: 'Run ngtw build'
