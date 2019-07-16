@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from '../globals';
 
 @Component({
   selector: 'app-siteheader',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SiteheaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public globals: Globals) { }
 
   ngOnInit() {
+  }
+
+  toggle() {
+    this.globals.isDropdownOpen = !this.globals.isDropdownOpen;
   }
 
 }

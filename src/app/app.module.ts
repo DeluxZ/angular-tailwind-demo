@@ -9,6 +9,7 @@ import { SiteheaderComponent } from './siteheader/siteheader.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { PropertycardComponent } from './propertycard/propertycard.component';
 import { SearchfiltersComponent } from './searchfilters/searchfilters.component';
+import { Globals } from './globals';
 import { MaterialDesignComponent } from './material-design/material-design.component';
 
 @NgModule({
@@ -26,7 +27,9 @@ import { MaterialDesignComponent } from './material-design/material-design.compo
     SearchfiltersComponent,
     MaterialDesignComponent
   ],
-  providers: [],
+  providers: [Globals],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
