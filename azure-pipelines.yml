@@ -13,6 +13,9 @@ steps:
 - script: npm install
   displayName: Install NPM packages
 
+- script: sudo npm install -g @angular/cli
+  displayName: Install @angular/cli
+
 - script: sudo npm install -g ng-tailwindcss
   displayName: Install ng-tailwindcss via NPM
 
