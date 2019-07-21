@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SplashpageComponent } from './splashpage/splashpage.component';
@@ -15,6 +16,7 @@ import { MaterialDesignComponent } from './material-design/material-design.compo
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   declarations: [
