@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/twidel/Workcation%20Tailwind%20Angular/_apis/build/status/DeluxZ.angular-tailwind-demo?branchName=master)](https://dev.azure.com/twidel/Workcation%20Tailwind%20Angular/_build/latest?definitionId=36&branchName=master)
+[![Build Status](https://dev.azure.com/twidel/Workcation%20Tailwind%20Angular/_apis/build/status/Workcation%20Angular?branchName=master)](https://dev.azure.com/twidel/Workcation%20Tailwind%20Angular/_build/latest?definitionId=36&branchName=master)
 
 # Workcation Angular
 
