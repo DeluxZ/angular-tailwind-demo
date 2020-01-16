@@ -16,12 +16,6 @@ steps:
 - script: sudo npm install -g @angular/cli
   displayName: Install @angular/cli
 
-- script: sudo npm install -g ng-tailwindcss
-  displayName: Install ng-tailwindcss via NPM
-
-- script: npm run prestart
-  displayName: Run ngtw build
-
 - script: ng build --prod
   displayName: Build Angular
 
@@ -39,11 +33,3 @@ steps:
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     artifact: 'drop'
-
-# - script: echo Hello, world!
-#   displayName: 'Run a one-line script'
-
-# - script: |
-#     echo Add other tasks to build, test, and deploy your project.
-#     echo See https://aka.ms/yaml
-#   displayName: 'Run a multi-line script'
