@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-tailwind-demo'`, () => {
+  it(`should have as title 'workcation-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-tailwind-demo');
+    expect(app.title).toEqual('workcation-angular');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-tailwind-demo!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to workcation-angular!');
   });
 });

@@ -7918,18 +7918,7 @@ video {
 
 .btn-blue {
   /* @apply bg-blue-500 text-white font-bold py-2 px-4 rounded; */
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  display: inline-block;
-  background-color: #667eea;
-  border-radius: 0.5rem;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  /* @apply px-5 py-3 inline-block bg-indigo-500 rounded-lg text-white font-semibold tracking-wide uppercase shadow-lg; */
 }
 
 .btn-blue:hover{
