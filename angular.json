@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "workcation-angular"
+  "defaultProject": "workcation-angular",
+  "cli": {
+    "analytics": "05a0e2a8-2d15-4fc9-8e8d-cf0ef91a3cb0"
+  }
 }
