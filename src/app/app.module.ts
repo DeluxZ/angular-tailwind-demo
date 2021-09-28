@@ -11,7 +11,6 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { PropertycardComponent } from './propertycard/propertycard.component';
 import { SearchfiltersComponent } from './searchfilters/searchfilters.component';
 import { Globals } from './globals';
-import { MaterialDesignComponent } from './material-design/material-design.component';
 
 @NgModule({
   imports: [
@@ -26,8 +25,7 @@ import { MaterialDesignComponent } from './material-design/material-design.compo
     SiteheaderComponent,
     DropdownComponent,
     PropertycardComponent,
-    SearchfiltersComponent,
-    MaterialDesignComponent
+    SearchfiltersComponent
   ],
   providers: [Globals],
   bootstrap: [AppComponent]
