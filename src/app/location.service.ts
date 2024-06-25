@@ -10,7 +10,7 @@ import { Location } from './models/location';
 })
 export class LocationService {
 
-  private locationUrl = 'https://workcation.azurewebsites.net/api/Locations'; // URL to web api
+  private locationUrl = 'https://workation-api.wittyrock-ef7d976b.westeurope.azurecontainerapps.io/locations'; // URL to web api
 
   constructor(private http: HttpClient) { 
 
