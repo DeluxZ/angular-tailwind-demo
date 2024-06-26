@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SplashpageComponent } from './splashpage/splashpage.component';
@@ -12,23 +12,25 @@ import { PropertycardComponent } from './propertycard/propertycard.component';
 import { SearchfiltersComponent } from './searchfilters/searchfilters.component';
 import { Globals } from './globals';
 
-@NgModule({
+@NgModule({ 
+  declarations: [
+      AppComponent,
+      SplashpageComponent,
+      DashboardComponent,
+      SiteheaderComponent,
+      DropdownComponent,
+      PropertycardComponent,
+      SearchfiltersComponent
+  ],
+  bootstrap: [AppComponent], 
   imports: [
     BrowserModule,
-    HttpClientModule,
     AppRoutingModule
-  ],
-  declarations: [
-    AppComponent,
-    SplashpageComponent,
-    DashboardComponent,
-    SiteheaderComponent,
-    DropdownComponent,
-    PropertycardComponent,
-    SearchfiltersComponent
-  ],
-  providers: [Globals],
-  bootstrap: [AppComponent]
+  ], 
+  providers: [
+    Globals, 
+    provideHttpClient(withInterceptorsFromDi())
+  ] 
 })
 export class AppModule {
 
