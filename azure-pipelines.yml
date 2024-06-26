@@ -19,7 +19,7 @@ steps:
 - script: sudo npm install -g @angular/cli
   displayName: Install @angular/cli
 
-- script: ng build --prod
+- script: ng build --configuration production
   displayName: Build Angular
 
 - task: CopyFiles@2
